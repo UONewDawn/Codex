@@ -1,0 +1,46 @@
+/* Custom CSS for New Dawn Codex */
+
+/* Add any custom styling here */
+
+:root {
+    --md-primary-fg-color: #673ab7;
+    --md-accent-fg-color: #9c27b0;
+}
+
+/* Improve table readability */
+.md-typeset table:not([class]) {
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+}
+
+/* Style for grid cards on home page */
+.grid.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* Better spacing for admonitions */
+.md-typeset .admonition {
+    margin: 1.5rem 0;
+}
+
+/* Improve code block appearance */
+.md-typeset pre > code {
+    padding: 1rem;
+}
+
+/* Better link visibility in dark mode */
+[data-md-color-scheme="slate"] .md-typeset a {
+    color: #bb86fc;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+    color: #e1bee7;
+}
